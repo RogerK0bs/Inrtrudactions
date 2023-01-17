@@ -44,7 +44,7 @@ public:
 	{
 		y2 = number;
 	}
-	double distance_lenght(double valueX1, double valueX2, double valueY1, double valueY2)
+	double distance_lenght(double valueX1, double valueX2, double valueY1, double valueY2) // Можно было бы напрямую брать переменные с класса.
 	{
 		return (valueY2 - valueY1) + (valueX2 - valueX1);
 	}
@@ -119,7 +119,6 @@ void main()
 		}
 		system("cls");
 	}
-		
 	cout<<"\nX1= " << a.GetX1()<<"\tY1= "<<a.GetY1() << endl;
 	cout<<"\nX2= " << a.GetX2()<<"\tY2= "<<a.GetY2() << endl;
 	cout <<"Расстояние от точки до точки = "<< a.distance_lenght(a.GetX1(), a.GetX2(), a.GetY1(), a.GetY2()) << endl;
