@@ -1,10 +1,10 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <Windows.h>
 using namespace std;
-//		Класс - это тип данных
-//		Структура - это тип данных
-class Point // Создавая структуру  или класс мы создаем новый тип данных
-			 // Так же их называют пользовательскими или составными типами данных
+//		РљР»Р°СЃСЃ - СЌС‚Рѕ С‚РёРї РґР°РЅРЅС‹С…
+//		РЎС‚СЂСѓРєС‚СѓСЂР° - СЌС‚Рѕ С‚РёРї РґР°РЅРЅС‹С…
+class Point // РЎРѕР·РґР°РІР°СЏ СЃС‚СЂСѓРєС‚СѓСЂСѓ  РёР»Рё РєР»Р°СЃСЃ РјС‹ СЃРѕР·РґР°РµРј РЅРѕРІС‹Р№ С‚РёРї РґР°РЅРЅС‹С…
+			 // РўР°Рє Р¶Рµ РёС… РЅР°Р·С‹РІР°СЋС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёРјРё РёР»Рё СЃРѕСЃС‚Р°РІРЅС‹РјРё С‚РёРїР°РјРё РґР°РЅРЅС‹С…
 {
 private:
 	double x1;
@@ -12,35 +12,35 @@ private:
 	double y1;
 	double y2;
 public:
-	double GetX1() // Get-метод x1
+	double GetX1() // Get-РјРµС‚РѕРґ x1
 	{
 		return x1;
 	}
-	double GetX2() // Get-метод x2
+	double GetX2() // Get-РјРµС‚РѕРґ x2
 	{
 		return x2;
 	}
-	double GetY1() // Get-метод y1
+	double GetY1() // Get-РјРµС‚РѕРґ y1
 	{
 		return y1;
 	}
-	double GetY2() // Get-метод y2
+	double GetY2() // Get-РјРµС‚РѕРґ y2
 	{
 		return y2;
 	}
-	void SetX1(double number)// Set-метод x1
+	void SetX1(double number)// Set-РјРµС‚РѕРґ x1
 	{
 		x1 = number;
 	}
-	void SetX2(double number)// Set-метод x2
+	void SetX2(double number)// Set-РјРµС‚РѕРґ x2
 	{
 		x2 = number;
 	}
-	void SetY1(double number)// Set-метод y1
+	void SetY1(double number)// Set-РјРµС‚РѕРґ y1
 	{
 		y1 = number;
 	}
-	void SetY2(double number)// Set-метод y2
+	void SetY2(double number)// Set-РјРµС‚РѕРґ y2
 	{
 		y2 = number;
 	}
@@ -82,16 +82,16 @@ void main()
 {
 	setlocale(LC_ALL, "");
 //	cout <<"Hellow OOP" << endl;
-//	int a;	 // Объявление переменной 'a' типа 'int'
-//	Point A; // Объявление переменной 'A' типа 'Point'
-////тип данных // Объявление объекта 'A' структуры 'Point' 
-//			 // Объявление экземпляра 'A' структуры 'Point'
-//			 // Объекты часто называют экземплярами класса или структуры.
+//	int a;	 // РћР±СЉСЏРІР»РµРЅРёРµ РїРµСЂРµРјРµРЅРЅРѕР№ 'a' С‚РёРїР° 'int'
+//	Point A; // РћР±СЉСЏРІР»РµРЅРёРµ РїРµСЂРµРјРµРЅРЅРѕР№ 'A' С‚РёРїР° 'Point'
+////С‚РёРї РґР°РЅРЅС‹С… // РћР±СЉСЏРІР»РµРЅРёРµ РѕР±СЉРµРєС‚Р° 'A' СЃС‚СЂСѓРєС‚СѓСЂС‹ 'Point' 
+//			 // РћР±СЉСЏРІР»РµРЅРёРµ СЌРєР·РµРјРїР»СЏСЂР° 'A' СЃС‚СЂСѓРєС‚СѓСЂС‹ 'Point'
+//			 // РћР±СЉРµРєС‚С‹ С‡Р°СЃС‚Рѕ РЅР°Р·С‹РІР°СЋС‚ СЌРєР·РµРјРїР»СЏСЂР°РјРё РєР»Р°СЃСЃР° РёР»Рё СЃС‚СЂСѓРєС‚СѓСЂС‹.
 //	A.x = 2;
 //	A.y = 3;
-//	cout << A.x << "\t" << A.y << endl; // обращение по имени объекта '.'
+//	cout << A.x << "\t" << A.y << endl; // РѕР±СЂР°С‰РµРЅРёРµ РїРѕ РёРјРµРЅРё РѕР±СЉРµРєС‚Р° '.'
 //	Point* pA = &A;
-//	cout << pA->x << "\t" << pA->y << endl; // обращение по адресу объекта '->'
+//	cout << pA->x << "\t" << pA->y << endl; // РѕР±СЂР°С‰РµРЅРёРµ РїРѕ Р°РґСЂРµСЃСѓ РѕР±СЉРµРєС‚Р° '->'
 	//Point a, b;
 	Point a;
 	double n=0;
@@ -101,19 +101,19 @@ void main()
 		switch (i)
 		{
 		case 0:
-			cout << "Введите X1= "; cin >> n;
+			cout << "Р’РІРµРґРёС‚Рµ X1= "; cin >> n;
 			a.SetX1(n);
 			break;
 		case 1:
-			cout << "Введите Y1= "; cin >> n;
+			cout << "Р’РІРµРґРёС‚Рµ Y1= "; cin >> n;
 			a.SetY1(n);
 			break;
 		case 2:
-			cout << "Введите X2= "; cin >> n;
+			cout << "Р’РІРµРґРёС‚Рµ X2= "; cin >> n;
 			a.SetX2(n);
 			break;
 		case 3:
-			cout << "Введите Y2= "; cin >> n;
+			cout << "Р’РІРµРґРёС‚Рµ Y2= "; cin >> n;
 			a.SetY2(n);
 			break;
 		}
@@ -122,7 +122,7 @@ void main()
 		
 	cout<<"\nX1= " << a.GetX1()<<"\tY1= "<<a.GetY1() << endl;
 	cout<<"\nX2= " << a.GetX2()<<"\tY2= "<<a.GetY2() << endl;
-	cout <<"Расстояние от точки до точки = "<< a.distance_lenght(a.GetX1(), a.GetX2(), a.GetY1(), a.GetY2()) << endl;
-	cout << "\nРасстояние от X1 до X2 =" << a.distance_X() << endl;
-	cout << "\nРасстояние от Y1 до Y2 =" << a.distance_Y() << endl;
+	cout <<"Р Р°СЃСЃС‚РѕСЏРЅРёРµ РѕС‚ С‚РѕС‡РєРё РґРѕ С‚РѕС‡РєРё = "<< a.distance_lenght(a.GetX1(), a.GetX2(), a.GetY1(), a.GetY2()) << endl;
+	cout << "\nР Р°СЃСЃС‚РѕСЏРЅРёРµ РѕС‚ X1 РґРѕ X2 =" << a.distance_X() << endl;
+	cout << "\nР Р°СЃСЃС‚РѕСЏРЅРёРµ РѕС‚ Y1 РґРѕ Y2 =" << a.distance_Y() << endl;
 }
