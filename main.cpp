@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <Windows.h>
+#include <math.h>
 using namespace std;
 //		Класс - это тип данных
 //		Структура - это тип данных
@@ -46,7 +47,7 @@ public:
 	}
 	double distance_lenght(double valueX1, double valueX2, double valueY1, double valueY2) // Можно было бы напрямую брать переменные с класса.
 	{
-		return (valueY2 - valueY1) + (valueX2 - valueX1);
+		return ((valueY2 - valueY1)* (valueY2 - valueY1)) + ((valueX2 - valueX1)*(valueX2 - valueX1));
 	}
 	double distance_X()//(double x1, double x2)
 	{
@@ -121,7 +122,7 @@ void main()
 	}
 	cout<<"\nX1= " << a.GetX1()<<"\tY1= "<<a.GetY1() << endl;
 	cout<<"\nX2= " << a.GetX2()<<"\tY2= "<<a.GetY2() << endl;
-	cout <<"Расстояние от точки до точки = "<< a.distance_lenght(a.GetX1(), a.GetX2(), a.GetY1(), a.GetY2()) << endl;
+	cout <<"Расстояние от точки до точки = "<< sqrt(a.distance_lenght(a.GetX1(), a.GetX2(), a.GetY1(), a.GetY2())) << endl;
 	cout << "\nРасстояние от X1 до X2 =" << a.distance_X() << endl;
 	cout << "\nРасстояние от Y1 до Y2 =" << a.distance_Y() << endl;
 }
